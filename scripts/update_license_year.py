@@ -2,7 +2,7 @@ import re
 from datetime import datetime
 
 LICENSE_PATH = "LICENSE.md"
-START_YEAR = 2025
+START_YEAR = 2024
 CURRENT_YEAR = datetime.now().year
 
 with open(LICENSE_PATH, "r", encoding="utf-8") as f:
