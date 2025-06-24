@@ -8,8 +8,7 @@ CURRENT_YEAR = datetime.now().year
 with open(LICENSE_PATH, "r", encoding="utf-8") as f:
     content = f.read()
 
-# Regex to match the copyright line
-pattern = re.compile(r"Copyright © (\d{4})(?: (\d{4}))? \\[TruTemplate Contributors\]\(CONTRIBUTORS.md\)")
+pattern = re.compile(r"Copyright © (\d{4})(?: (\d{4}))? \[TruTemplate Contributors\]\(CONTRIBUTORS\.md\)")
 
 match = pattern.search(content)
 if match:
