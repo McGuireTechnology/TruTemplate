@@ -192,3 +192,34 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Android build and IDE files
+android/.gradle/
+android/.idea/
+android/local.properties
+android/.DS_Store
+android/build/
+android/app/build/
+android/.cxx/
+android/.externalNativeBuild/
+android/.settings/
+android/.classpath
+android/.project
+android/.vscode/
+
+# Apple Xcode and build files
+apple/trutemplate.xcodeproj/project.xcworkspace/
+apple/trutemplate.xcodeproj/xcuserdata/
+apple/trutemplate.xcodeproj/xcshareddata/WorkspaceSettings.xcsettings
+apple/trutemplate.xcodeproj/xcshareddata/xcschemes/
+apple/trutemplate.xcworkspace/
+apple/build/
+apple/DerivedData/
+apple/*.xcuserstate
+apple/*.xcuserdata
+apple/*.xcworkspace
+apple/*.xcsettings
+apple/.DS_Store
+
+# General macOS
+.DS_Store
