@@ -1,5 +1,9 @@
 {
   "files.exclude": {
     "**/.git": false
+  },
+  "material-icon-theme.folders.associations": {
+    "proxy": "connection",
+    "dashboard": "react-components"
   }
 }

@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black
+  - repo: local
+    hooks:
+      - id: update-license-year
+        name: Update License Year
+        entry: python scripts/update_license_year.py
+        language: system
+        types: [file]
+      - id: push-root-docs
+        name: Push Root Docs
+        entry: python scripts/push_root_docs.py
+        language: system
+        types: [file]

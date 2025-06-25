@@ -1,0 +1,5 @@
+pre-commit
+
+mkdocs
+mkdocs-material
+mkdocs-monorepo-plugin

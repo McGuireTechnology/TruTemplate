@@ -22,4 +22,3 @@ TruTemplate is designed to streamline your project setup and management. Here ar
 
 ## 📢 Get Involved
 - Open a pull request to add your feature or improvement!
-
