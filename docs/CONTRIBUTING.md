@@ -1,3 +1,8 @@
+<!--
+    NOTE: This file is auto-copied from the repository root.
+    Please edit the original in the root directory, not in docs/.
+--->
+
 # 🤝 Contributing
 
 Thank you for your interest in contributing! We welcome all kinds of contributions, including code, documentation, bug reports, and feature requests.
@@ -11,7 +16,7 @@ Thank you for your interest in contributing! We welcome all kinds of contributio
 
 ## Code of Conduct
 
-Please be respectful and considerate in all interactions. See our [Security Policy](SECURITY.md) for responsible disclosure.
+Please be respectful and considerate in all interactions. See our [Security Policy](security.md) for responsible disclosure.
 
 ## Reporting Issues
 
@@ -25,7 +30,7 @@ Please be respectful and considerate in all interactions. See our [Security Poli
 
 ## Adding Yourself as a Contributor
 
-Add your name to the [CONTRIBUTORS.md](CONTRIBUTORS.md) file and open a pull request!
+Add your name to the [contributors.md](contributors.md) file and open a pull request!
 
 ---
 

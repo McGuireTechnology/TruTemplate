@@ -1,3 +1,8 @@
+<!--
+    NOTE: This file is auto-copied from the repository root.
+    Please edit the original in the root directory, not in docs/.
+--->
+
 # 🤖 Copilot Custom Instructions for Pull Request Review
 
 When reviewing pull requests in this repository, GitHub Copilot should:

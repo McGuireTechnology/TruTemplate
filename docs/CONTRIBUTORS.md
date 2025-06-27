@@ -1,3 +1,8 @@
+<!--
+    NOTE: This file is auto-copied from the repository root.
+    Please edit the original in the root directory, not in docs/.
+--->
+
 # 👥 TruTemplate Contributors, Inspiration, Dependencies, Tools
 
 Thank you to everyone who has contributed to this project!

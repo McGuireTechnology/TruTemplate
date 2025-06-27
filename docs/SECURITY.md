@@ -1,3 +1,8 @@
+<!--
+    NOTE: This file is auto-copied from the repository root.
+    Please edit the original in the root directory, not in docs/.
+--->
+
 # 🔒 Security Policy
 
 Thank you for helping keep TruTemplate secure!
@@ -25,4 +30,4 @@ We follow responsible disclosure practices. Please give us a reasonable time to 
 
 ---
 
-For more information, see our [CONTRIBUTING.md](CONTRIBUTING.md) or contact the maintainers.
+For more information, see our [contributing.md](contributing.md) or contact the maintainers.

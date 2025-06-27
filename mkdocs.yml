@@ -1,30 +1,42 @@
-site_name: TruTemplate
+# Project information
+site_name: TruCore
+site_url: https://McGuireTechnology.github.io/trucore/
+site_author: McGuire Technology and TruCore Contributors
+site_description: >-
+  TruCore provides a robust foundation for building modern, scalable FastAPI applications with seamless integration for multiple front-end platforms, including Vite-powered web apps, native Apple (iOS/macOS), and Android clients. 
+  
+# Copyright
+copyright: Copyright © 2025 McGuire Technology, LLC and TruCore Contributors
+
+# Repository
+repo_url: https://github.com/McGuireTechnology/TruCore
+repo_name: McGuireTechnology/TruCore
+
+# Theme
 theme:
   name: material
   palette:
     primary: 'purple'
     accent: 'indigo'
+  edit_uri: edit/main/docs/
+  features:
+    - content.action.edit
+    - content.action.view
 
+# Plugins
 plugins:
   - search
-  - macros
+  - macros:
+      module_name: mkdocs
 
-nav:
-  - Home: ../README.md
-  - Contributing: CONTRIBUTING.md
-  - Code of Conduct: CODE_OF_CONDUCT.md
-  - Contributors: CONTRIBUTORS.md
-  - Security: SECURITY.md
-  - Support: SUPPORT.md
-  - License: LICENSE.md
-  - Custom Instructions: custom-instructions.md
-  - Docs:
-      - Features: docs/features.md
-      - Android: docs/android/index.md
-      - API: docs/api/index.md
-      - Apple: docs/apple/index.md
-      - Git: docs/git/index.md
-      - GitHub: docs/github/index.md
-      - Scripts: docs/scripts/index.md
-      - VSCode: docs/vscode/index.md
-      - WWW: docs/www/index.md
+# Hooks
+
+# Additional Configurations
+#extra:
+
+# Extensions
+#markdown_extensions:
+
+# Page tree
+#nav:
+
