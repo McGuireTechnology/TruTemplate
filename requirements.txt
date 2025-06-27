@@ -1,5 +1,8 @@
+fastapi[standard]
+
 pre-commit
 
 mkdocs
 mkdocs-material
-mkdocs-monorepo-plugin
+mkdocs-macros-plugin
+mkdocs-git-revision-date-localized-plugin
