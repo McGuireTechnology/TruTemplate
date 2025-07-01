@@ -16,15 +16,47 @@ repo_name: McGuireTechnology/TruCore
 theme:
   name: material
   palette:
-    primary: 'purple'
-    accent: 'indigo'
-  edit_uri: edit/main/docs/
+    - scheme: default
+      primary: 'purple'
+      accent: 'indigo'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: 'purple'
+      accent: 'indigo'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  edit_uri: edit/main/
   features:
     - content.action.edit
     - content.action.view
+    - content.tabs.link
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate 
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
 
 # Plugins
 plugins:
+  - offline
+  - tags
+  - blog
+  - social
+  - privacy
   - search
   - macros:
       module_name: mkdocs
@@ -32,11 +64,53 @@ plugins:
 # Hooks
 
 # Additional Configurations
-#extra:
+extra:
+  generator: false
+  version:
+    provider: mike
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/McGuireTechnology/TruCore
+  footer:
+    - text: '© 2025 McGuire Technology, LLC and TruCore Contributors | '
+      html: true
+    - text: '<a href="/code_of_conduct.md">Code of Conduct</a> | <a href="/contributors.md">Contributors</a> | <a href="/security.md">Security</a> | <a href="/support.md">Support</a> | <a href="/license.md">License</a> | <a href="/contributing.md">Contributing</a> | <a href="/custom-instructions.md">Custom Instructions</a>'
+      html: true
+
+extra_css:
+  - stylesheets/styles.css
 
 # Extensions
-#markdown_extensions:
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 # Page tree
-#nav:
+nav:
+  - Home: readme.md
+  - Docs:
+      - Test: test.md
+      - Test2: test2.md
+  - About:
+      - Code of Conduct: code_of_conduct.md
+      - Contributors: contributors.md
+      - Security: security.md
+      - Support: support.md
+      - License: license.md
+      - Contributing: contributing.md
+      - Custom Instructions: custom-instructions.md
+
+
 

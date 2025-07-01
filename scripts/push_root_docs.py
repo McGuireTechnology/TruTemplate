@@ -15,7 +15,7 @@ def copy_root_markdown_to_docs(*args, **kwargs):
     )
     for filename in root_md_files:
         src = os.path.join(root_dir, filename)
-        dst = os.path.join(docs_dir, filename)
+        dst = os.path.join(docs_dir, filename.lower())
         with open(src, "r", encoding="utf-8") as f:
             content = f.read()
         # Prepend notice if not already present
@@ -33,9 +33,13 @@ def copy_root_markdown_to_docs(*args, **kwargs):
             if existing_content == new_content:
                 write_file = False
         if write_file:
+            # Remove any existing file with the original case to avoid duplicates
+            old_dst = os.path.join(docs_dir, filename)
+            if os.path.exists(old_dst) and old_dst != dst:
+                os.remove(old_dst)
             with open(dst, "w", encoding="utf-8") as f:
                 f.write(new_content)
-            print(f"Copied {filename} to docs/{filename} with edit notice")
+            print(f"Copied {filename} to docs/{filename.lower()} with edit notice")
 
 
 # For manual script execution

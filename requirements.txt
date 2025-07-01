@@ -3,6 +3,6 @@ fastapi[standard]
 pre-commit
 
 mkdocs
-mkdocs-material
+mkdocs-material[imaging]
 mkdocs-macros-plugin
 mkdocs-git-revision-date-localized-plugin
