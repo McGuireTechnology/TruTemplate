@@ -20,3 +20,4 @@ Thank you for using TruTemplate! If you need help or have questions, please use 
 ---
 
 We appreciate your feedback and contributions to make TruTemplate better!
+
