@@ -52,11 +52,10 @@ theme:
 
 # Plugins
 plugins:
-  - offline
   - tags
   - blog
-  - social
-  - privacy
+  #- social
+  #- privacy
   - search
   - macros:
       module_name: mkdocs
@@ -85,7 +84,7 @@ extra:
       html: true
 
 extra_css:
-  - stylesheets/styles.css
+  - css/styles.css
 
 # Extensions
 markdown_extensions:
@@ -99,18 +98,26 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: readme.md
-  - Docs:
-      - Test: test.md
-      - Test2: test2.md
-  - About:
-      - Code of Conduct: code_of_conduct.md
-      - Contributors: contributors.md
-      - Security: security.md
-      - Support: support.md
-      - License: license.md
+  - Home: README.md
+  - Getting Started: getting-started.md
+  - Documentation:
+      - Usage: usage.md
+      - Configuration: configuration.md
+      - API Reference: api.md
+      - Tutorials: tutorials.md
+  - Development:
       - Contributing: contributing.md
-      - Custom Instructions: custom-instructions.md
+      - Code of Conduct: code_of_conduct.md
+      - Development Setup: dev_setup.md
+      - Style Guide: style_guide.md
+  - About:
+      - Project Info: about.md
+      - Roadmap: roadmap.md
+      - License: license.md
+      - Security: security.md
+      - Contributors: contributors.md
+  - Support: support.md
+  - Changelog: changelog.md
 
 
 
